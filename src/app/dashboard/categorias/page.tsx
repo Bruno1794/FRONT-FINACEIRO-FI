@@ -9,8 +9,6 @@ import deleteCategoria from "@/actions/categorias/delete-categoria";
 
 export default function PageLista() {
     const [categorias, setCategorias] = React.useState([]);
-    const [currentPage, setCurrentPage] = React.useState(1);
-    const [lastPage, setLastPage] = React.useState(1);
     const [idAcao, setIdAcao] = React.useState<number | null>(null);
     const [atualiza, setAtualiza] = React.useState(false);
     const [pesquisa, setPesquisa] = React.useState("");
@@ -91,19 +89,6 @@ export default function PageLista() {
         };
     }, []);
 
-    const pageNumbers = [];
-    const maxPagesToShow = 5;
-
-    // Cálculo das páginas ao redor da página atual
-    const startPage = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2));
-    const endPage = Math.min(lastPage, startPage + maxPagesToShow - 1);
-
-    // Corrige o início quando está no final
-    const adjustedStartPage = Math.max(1, Math.min(startPage, lastPage - maxPagesToShow + 1));
-
-    for (let i = adjustedStartPage; i <= endPage; i++) {
-        pageNumbers.push(i);
-    }
 
     return (
         <>

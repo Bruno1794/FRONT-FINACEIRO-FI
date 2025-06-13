@@ -4,7 +4,6 @@ import React from "react";
 import Link from "next/link";
 import {redirect, useParams} from "next/navigation";
 import Swal from 'sweetalert2'
-import putCategoria from "@/actions/categorias/put-categoria";
 import showBancos from "@/actions/bancos/show-bancos";
 import putBanco from "@/actions/bancos/put-banco";
 

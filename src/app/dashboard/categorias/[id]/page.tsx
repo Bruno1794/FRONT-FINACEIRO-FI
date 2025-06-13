@@ -3,7 +3,6 @@ import styles from '../../categorias/clientes.module.css'
 import React from "react";
 import Link from "next/link";
 import {redirect, useParams} from "next/navigation";
-import postCategoria from "@/actions/categorias/post-categoria";
 import Swal from 'sweetalert2'
 import showCategoria from "@/actions/categorias/show-categoria";
 import putCategoria from "@/actions/categorias/put-categoria";
