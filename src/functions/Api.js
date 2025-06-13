@@ -1,4 +1,4 @@
-export const API_URL = "http://31.97.29.38:8000";
+export const API_URL = "node-finacer.zapto.org";
 
 export function POST_LOGIN() {
     return {
