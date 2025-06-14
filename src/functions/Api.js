@@ -1,4 +1,5 @@
 export const API_URL = "https://node-finacer.zapto.org";
+//export const API_URL = "http://localhost:8000";
 
 export function POST_LOGIN() {
     return {
@@ -91,6 +92,30 @@ export function SHOW_BANCOS(value) {
 export function PUT_BANCOS(value) {
     return {
         url: API_URL + `/bancos/${value}`
+
+    };
+
+}
+
+export function GET_MOVIMENTO(value) {
+    return {
+        url: API_URL + `/movimentos?p=${value}`,
+
+    };
+
+}
+
+export function POST_MOVIMENTO() {
+    return {
+        url: API_URL + '/movimentos'
+
+    };
+
+}
+
+export function DELETE_MOVIMENTO(value) {
+    return {
+        url: API_URL + `/movimentos/${value}`
 
     };
 
