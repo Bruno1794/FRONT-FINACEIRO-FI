@@ -120,3 +120,4 @@ export function DELETE_MOVIMENTO(value) {
     };
 
 }
+
