@@ -75,14 +75,6 @@ export default function LayoutSistema({children}: { children: ReactNode }) {
                                 Bancos
                             </li>
                         </Link>
-
-                        <Link href="/dashboard/movimento">
-                            <li onClick={() => setIsSidebarOpen(false)} className={`${styles.Liimg}
-                             ${pathname.startsWith('/dashboard/bancos') ? styles.activeTeste : ''}`}>
-                                <Image src="/img/client-mini.png" alt="" width={16} height={16}/>
-                                Movimento
-                            </li>
-                        </Link>
                     </ul>
                 </nav>
             </aside>

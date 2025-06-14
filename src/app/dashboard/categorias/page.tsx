@@ -13,7 +13,7 @@ export default function PageLista() {
     const [atualiza, setAtualiza] = React.useState(false);
     const [pesquisa, setPesquisa] = React.useState("");
 
-3
+
     function handleDelete(id: number) {
         setAtualiza(false)
         Swal.fire({
