@@ -97,7 +97,7 @@ export default function PageLista() {
         }
 
         loadingCategorias();
-    }, [isOpen])
+    }, [pesquisa])
 
 
     // Função para desmarcar a linha ativa ao clicar fora
