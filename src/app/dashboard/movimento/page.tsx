@@ -148,6 +148,7 @@ export default function PageLista() {
                 setValor("")
                 setVencimento("")
                 setTipo("Receita")
+                setCategoria("")
             })
 
         }
